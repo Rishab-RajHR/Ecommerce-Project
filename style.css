@@ -5,3 +5,15 @@
    text-decoration: none;
    list-style: none;
 }
+
+nav{
+   background: darkblue;
+   height: 80px;
+}
+
+.my_logo
+{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
