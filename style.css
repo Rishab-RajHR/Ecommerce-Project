@@ -55,4 +55,18 @@ nav ul li a:hover
    line-height: 80px;
    font-size: 30px;
    margin-right: 40px;
+   display: none;
+}
+
+#check
+{
+    display: none;
+}
+
+@media(max-width:750px)
+{
+    .checkbtn
+    {
+        
+    }
 }
