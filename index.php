@@ -8,7 +8,7 @@
 </head>
 <body>
    <nav>
-        <label class="my_logo">My Ecommerce</label>
+        <label class="my_logo">My Ecom</label>
 
         <ul>
             <li>

@@ -16,4 +16,6 @@ nav{
     color: white;
     font-size: 25px;
     font-weight: bold;
+    line-height: 80px;
+    padding: 0 100px;
 }
