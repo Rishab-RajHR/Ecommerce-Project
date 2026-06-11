@@ -35,3 +35,14 @@ nav ul li
     line-height: 80px;
     margin: 0 5px;
 }
+
+nav ul li a
+{
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover
+{
+    color: yellow;
+}
