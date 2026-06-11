@@ -23,3 +23,8 @@ nav{
     line-height: 80px;
     padding: 0 100px;
 }
+
+nav ul {
+   float: right;
+   margin-right: 60px;
+}
