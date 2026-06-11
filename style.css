@@ -24,7 +24,8 @@ nav{
     padding: 0 100px;
 }
 
-nav ul {
+nav ul
+{
    float: right;
    margin-right: 60px;
 }
@@ -45,4 +46,10 @@ nav ul li a
 nav ul li a:hover
 {
     color: yellow;
+}
+
+.checkbtn
+{
+   float: right;
+   color: white;
 }
