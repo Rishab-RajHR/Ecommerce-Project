@@ -2,6 +2,32 @@
 
 $conn = mysqli_connect("localhost","root","","php_ecom");
 
+    if(isset($_POST['register']))
+    {
+        $u_name = $_POST['name'];
+
+        $u_email = $_POST['email'];
+
+        $u_address = $_POST['address'];
+
+        $u_phone = $_POST['phone'];
+
+        $u_pass = $_POST['password'];
+
+        $usertype = "user"; // By default value type
+
+        $sql = "INSERT INTO users (name, email, password, phone, address, usertype) VALUES ('$u_name', '$u_email','$u_pass',  '$u_phone', '$u_address', '$usertype')";
+
+
+        $data = mysqli_query($conn,$sql);
+
+        if($data)
+        {
+            echo "Register success";
+        }
+
+    }
+
 ?>
 
 <!DOCTYPE html>
