@@ -137,6 +137,7 @@ nav ul li a:hover
 .card p
 {
     padding: 10px;
+    margin: 10px;
 }
 
 .card a
