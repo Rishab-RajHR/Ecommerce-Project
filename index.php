@@ -40,5 +40,9 @@
             </li>
         </ul>
    </nav>
+
+   <div>
+       <img class="my_cover" src="cover.png">
+   </div>
 </body>
 </html>
