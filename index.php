@@ -47,10 +47,15 @@
 
    </div>
 
+   <div>
+  
+     <h3 class="p_title">Products</h3>
+
+   </div>
+
    <div class="my_card">
 
-        <h3>Products</h3>
-
+        
         <div class="card">
             
           <img class="p_image" src="images/watch.jpeg">
@@ -66,7 +71,7 @@
         </div>
         <div class="card">
             
-          <img class="p_image" src="images/shoe.jpeg">
+          <img class="p_image" src="images/shoe.jpg">
 
            <h4>Shoe</h4>
 
@@ -86,6 +91,32 @@
            <p>A phone is a communication device used for calling, messaging, and internet access. Modern smartphones offer cameras, apps, navigation, entertainment, and productivity tools, making daily tasks more convenient.</p>
 
            <p>Price : $830</p>
+
+           <a href="">Buy Now</a>
+
+        </div>
+        <div class="card">
+            
+          <img class="p_image" src="images/makeup.jpg">
+
+           <h4>Makeup</h4>
+
+           <p>Makeup consists of cosmetic products used to enhance or alter facial appearance. It includes foundation, lipstick, mascara, and other items that improve aesthetics, confidence, and personal expression.</p>
+
+           <p>Price : $430</p>
+
+           <a href="">Buy Now</a>
+
+        </div>
+        <div class="card">
+            
+          <img class="p_image" src="images/camera.jpeg">
+
+           <h4>Camera</h4>
+
+           <p>A camera is a device used to capture photographs and videos. It records visual moments digitally or on film, offering features like zoom, focus, and image stabilization.</p>
+
+           <p>Price : $1830</p>
 
            <a href="">Buy Now</a>
 

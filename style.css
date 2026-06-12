@@ -100,7 +100,7 @@ nav ul li a:hover
     object-fit: cover;
 }
 
-.my_card h3
+.p_title
 {
     text-align: center;
     font-size: 25px;
@@ -119,4 +119,30 @@ nav ul li a:hover
 .p_image
 {
      width: 100%;
+}
+
+.my_card
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h4
+{
+     padding: 10px;
+}
+
+.card p
+{
+    padding: 10px;
+}
+
+.card a
+{
+     padding: 10px;
+     background: skyblue;
+     border-radius: 10%;
+     margin: 10px;
 }
