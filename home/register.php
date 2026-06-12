@@ -1,3 +1,9 @@
+<?php
+
+$conn = mysqli_connect("localhost","root","","php_ecom");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +18,7 @@
 
        <h2>Register Form</h2>
 
-      <form>
+      <form action="" method="POST">
           
          <div class="input_deg">
             <label>Name :</label>
@@ -32,6 +38,11 @@
          <div class="input_deg">
             <label>Address :</label>
             <input type="text" name="address">
+         </div>
+
+         <div class="input_deg">
+            <label>Password :</label>
+            <input type="password" name="password">
          </div>
 
          <div class="input_deg">
