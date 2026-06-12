@@ -253,3 +253,19 @@ footer h3
     color: white;
     padding: 10px;
 }
+
+
+.input_deg label
+{
+      width: 100px;
+      display: inline-block;
+}
+
+
+input[type='text'],[type='email'],[type='number']
+{
+     width: 40%;
+     padding: 12px;
+     resize: vertical;
+     box-sizing: border-box;
+}

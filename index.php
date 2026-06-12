@@ -32,7 +32,7 @@
             </li>
 
             <li>
-               <a href="#">Register</a>
+               <a href="home/register.php">Register</a>
             </li>
 
             <li>
