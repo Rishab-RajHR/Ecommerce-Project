@@ -42,7 +42,19 @@
    </nav>
 
    <div>
+
        <img class="my_cover" src="cover.png">
+       
+   </div>
+
+   <div class="my_card">
+
+        <h3>Products</h3>
+
+        <div class="card">
+
+        </div>
+
    </div>
 </body>
 </html>
