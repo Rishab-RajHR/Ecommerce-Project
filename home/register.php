@@ -10,6 +10,8 @@
   
    <div class="my_form">
 
+       <h2>Register Form</h2>
+
       <form>
           
          <div class="input_deg">
