@@ -36,7 +36,7 @@
             </li>
 
             <li>
-               <a href="#">Login</a>
+               <a href="home/login.php">Login</a>
             </li>
         </ul>
    </nav>
@@ -185,7 +185,7 @@
               </p>
 
               <p>
-                 <a href="#">Login</a>
+                 <a href="home/login.php">Login</a>
               </p>
          </div>
 

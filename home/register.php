@@ -16,7 +16,7 @@ $conn = mysqli_connect("localhost","root","","php_ecom");
 
         $usertype = "user"; // By default value type
 
-        $sql = "INSERT INTO users (name, email, password, phone, address, usertype) VALUES ('$u_name', '$u_email','$u_pass',  '$u_phone', '$u_address', '$usertype')";
+        $sql = "INSERT INTO users (name,email, password,phone,address,usertype) VALUES ('$u_name', '$u_email','$u_pass',  '$u_phone', '$u_address', '$usertype')";
 
 
         $data = mysqli_query($conn,$sql);
