@@ -181,7 +181,7 @@
               </p>
 
               <p>
-                 <a href="#">Register</a>
+                 <a href="home/register.php">Register</a>
               </p>
 
               <p>
@@ -206,6 +206,11 @@
          </div>
 
       </div> 
+
+      <footer>
+           <hr/>
+           <h3>Copyright @AlexZen Knowledge 2020</h3>
+      </footer>
 
    </div>
  
