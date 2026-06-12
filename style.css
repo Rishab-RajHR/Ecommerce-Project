@@ -158,3 +158,48 @@ nav ul li a:hover
     background: black;
     color: white;
 }
+
+.footer
+{
+    background: black;
+    width: 100%;
+}
+
+.footer_title h3
+{
+    color: white;
+    font-size: 32px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.footer_content h4
+{
+     color: white;
+     font-size: 20px;
+     padding: 10px;
+     margin: 10px;
+     font-weight: bold;
+}
+
+.footer_content p
+{
+    color: white;
+    padding: 10px;
+}
+
+
+.footer_content a
+{
+    color: white;
+}
+
+
+.footer .footer_content
+{
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -165,6 +165,45 @@
                  <a href="#">Twitter</a>
               </p>
          </div>
+         <div>
+              <h4>Quick Links</h4>
+
+              <p>
+                 <a href="#">home</a>
+              </p>
+
+              <p>
+                 <a href="#">Products</a>
+              </p>
+
+              <p>
+                 <a href="#">Contact</a>
+              </p>
+
+              <p>
+                 <a href="#">Register</a>
+              </p>
+
+              <p>
+                 <a href="#">Login</a>
+              </p>
+         </div>
+
+         <div>
+              <h4>Location</h4>
+
+              <p>
+                 Western Union Street , House 27 
+              </p>
+
+              <p>
+                 Email : myecom@gmail.com
+              </p>
+
+              <p>
+                  Phone : 058163538
+              </p>
+         </div>
 
       </div> 
 
