@@ -124,6 +124,51 @@
 
    </div>
   
+
+   <!-- Footer Section -->
+
+   <div class="footer">
+
+     <div class="footer_title">
+         <h3>My Ecom</h3>
+     </div>
+
+      <div class="footer_content">
+          
+         <div>
+              <h4>Services</h4>
+
+              <p>
+                 <a href="#">Web Development</a>
+              </p>
+
+              <p>
+                 <a href="#">App Development</a>
+              </p>
+
+              <p>
+                 <a href="#">Digital Marketing</a>
+              </p>
+         </div>
+         <div>
+              <h4>Social Links</h4>
+
+              <p>
+                 <a href="#">Facebook</a>
+              </p>
+
+              <p>
+                 <a href="#">Instagram</a>
+              </p>
+
+              <p>
+                 <a href="#">Twitter</a>
+              </p>
+         </div>
+
+      </div> 
+
+   </div>
  
 </body>
 </html>
