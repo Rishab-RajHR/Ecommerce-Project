@@ -20,7 +20,7 @@
    width: 200px;
    height: 100%;
    position: fixed;
-   padding: 30px;
+   padding: 30px 0px;
 }
 
 .wrapper .sidebar h2
@@ -29,6 +29,7 @@
     margin-bottom: 30px;
     text-transform: uppercase;
     font-size: 20px;
+    text-align: center;
 }
 
 .wrapper .sidebar ul li
@@ -49,7 +50,21 @@
 }
 
 
-wrapper .sidebar ul li:hover
+.wrapper .sidebar ul li:hover
 {
     background: gray;
+}
+
+.header
+{
+    margin-left: 200px;
+    width: 100%;
+}
+
+.header .admin_header
+{
+    background: black;
+    padding: 15px;
+    width: 100%;
+    height: 70px;
 }
