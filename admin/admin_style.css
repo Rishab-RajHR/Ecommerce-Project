@@ -68,3 +68,12 @@
     width: 100%;
     height: 70px;
 }
+
+
+.header .admin_header a
+{
+    float: right;
+    background: skyblue;
+    padding: 10px;
+    border-radius: 15px;
+}
