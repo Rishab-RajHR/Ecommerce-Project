@@ -20,8 +20,28 @@ session_start();
   <title>Admin Page</title>
 </head>
 <body>
-    <h1>Admin page</h1>
+    
+    <div class="wrapper">
+         
+         <div class="sidebar">
+              
+             <h2>Ecom Admin</h2>
 
-    <a href="../logout.php">Logout</a>
+             <ul>
+               <li>
+                    <a href="#">Dashboard</a>
+               </li>
+               <li>
+                    <a href="#">Users</a>
+               </li>
+               <li>
+                    <a href="#">Add Products</a>
+               </li>
+               <li>
+                    <a href="#">View Products</a>
+               </li>
+             </ul>
+         </div>
+    </div>
 </body>
 </html>
