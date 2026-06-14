@@ -47,7 +47,7 @@ session_start();
          <div class="header">
 
             <div class="admin_header">
-                 <a href="#">Logout</a>
+                 <a href="../logout.php">Logout</a>
             </div>
             
             <div class="info">
