@@ -52,8 +52,40 @@ session_start();
             
             <div class="info">
     
-               <p>Our company is dedicated to delivering innovative, reliable, and high-quality solutions that help businesses grow and succeed. With a strong focus on customer satisfaction, we combine technology, expertise, and creativity to meet diverse business needs. We believe in integrity, teamwork, and continuous improvement, ensuring excellence in every project we undertake. Our mission is to build lasting relationships with clients by providing value-driven services and supporting their long-term success.</p>
+                <h1>Add Products</h1>
 
+                <div class="my_form">
+                    
+                   <form>
+
+                       <div class="div_deg">
+                           <label>Title</label>
+                           <input type="text" name="title">
+                       </div>
+
+                       <div class="div_deg">
+                           <label>Description</label>
+                           <textarea name="description"></textarea>
+                       </div>
+
+                       <div class="div_deg">
+                           <label>Price</label>
+                           <input type="number" name="price">
+                       </div>
+
+                       <div class="div_deg">
+                           <label>Quantity</label>
+                           <input type="number" name="qty">
+                       </div>
+
+                        <div class="div_deg">
+                          
+                           <input type="submit" name="add_product" value="Add product">
+                       </div>
+
+                   </form>
+                </div>
+             
             </div>
 
          </div>
