@@ -6,3 +6,18 @@
     list-style: none;
     box-sizing: border-box;
 }
+
+.wrapper
+{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar
+{
+   background: black;
+   width: 200px;
+   height: 100%;
+   position: fixed;
+   padding: 30px;
+}
