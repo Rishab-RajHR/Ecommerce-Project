@@ -12,7 +12,28 @@ session_start();
       header("location:../home/login.php");
    }
 
-?><!DOCTYPE html>
+   $conn=mysqli_connect("localhost","root","","php_ecom");
+
+   if(isset($_POST['add_product']))
+  {
+           $title = $_POST['title'];
+
+           $des = $_POST['description'];
+
+           $price = $_POST['price'];
+
+           $qty = $_POST['qty'];
+
+
+           $image_name = $_FILES['my_name']['name'];
+
+           $tmp = explode(".",$image_name);
+
+           $newfilename = round(microtime(true)).'.'.end($tmp);
+  }
+
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -56,7 +77,7 @@ session_start();
 
                 <div class="my_form">
                     
-                   <form>
+                   <form action="" method="POST" enctype="multipart/form-data">
 
                        <div class="div_deg">
                            <label>Title</label>
@@ -76,6 +97,11 @@ session_start();
                        <div class="div_deg">
                            <label>Quantity</label>
                            <input type="number" name="qty">
+                       </div>
+
+                       <div class="div_deg">
+                           <label>Product Image</label>
+                           <input type="file" name="my_image">
                        </div>
 
                         <div class="div_deg">
