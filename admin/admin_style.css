@@ -21,3 +21,10 @@
    position: fixed;
    padding: 30px;
 }
+
+.wrapper .sidebar h2
+{
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
