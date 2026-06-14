@@ -52,7 +52,7 @@ session_start();
             
             <div class="info">
     
-               <p>Our company delivers innovative solutions, high-quality services, and customer-focused experiences. We are committed to excellence, integrity, and growth, helping businesses achieve success through technology, expertise, and continuous improvement.</p>
+               <p>Our company is dedicated to delivering innovative, reliable, and high-quality solutions that help businesses grow and succeed. With a strong focus on customer satisfaction, we combine technology, expertise, and creativity to meet diverse business needs. We believe in integrity, teamwork, and continuous improvement, ensuring excellence in every project we undertake. Our mission is to build lasting relationships with clients by providing value-driven services and supporting their long-term success.</p>
 
             </div>
 
