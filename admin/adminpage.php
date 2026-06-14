@@ -43,6 +43,20 @@ session_start();
                </li>
              </ul>
          </div>
+
+         <div class="header">
+
+            <div class="admin_header">
+                 <a href="#">Logout</a>
+            </div>
+            
+            <div class="info">
+    
+               <p>Our company delivers innovative solutions, high-quality services, and customer-focused experiences. We are committed to excellence, integrity, and growth, helping businesses achieve success through technology, expertise, and continuous improvement.</p>
+
+            </div>
+
+         </div>
     </div>
 </body>
 </html>
