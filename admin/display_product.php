@@ -14,6 +14,23 @@ session_start();
 
    $conn = mysqli_connect("localhost","root","","php_ecom");
 
+
+   if(isset($_GET['id']))
+    {
+         
+   $p_id = $_GET['id'];
+
+    $del_sql = "DELETE from products where id='$p_id'";
+
+    $data = mysqli_query($conn,$del_sql);
+
+    if($data)
+    {
+        header("location:display_product.php");
+    }
+
+    }
+
    $sql = "SELECT * FROM products";
 
    $result = mysqli_query($conn,$sql);
@@ -69,6 +86,7 @@ session_start();
                       <th>Quantity</th>
                       <th>Price</th>
                       <th>Image</th>
+                      <the>Delete</the>
                   </tr>
 
                   <?php
@@ -85,6 +103,9 @@ session_start();
                        <td><?php echo $row['price'] ?></td>
                        <td>
                            <img height="100" width="100" src="../product_image/<?php echo $row['image'] ?>">
+                       </td>
+                       <td>
+                           <a onclick="return confirm('Are you sure to delete this ');" class="del_btn" href="display_product.php?id=<?php echo $row['id'] ?>">Delete</a>
                        </td>
                   </tr>
 
