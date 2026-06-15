@@ -117,7 +117,9 @@ textarea
 
 table{
      border: 2px solid black;
-     margin-left: 30%;
+     margin-left: 10%;
+     width: 70%;
+     margin-top: 30px;
 }
 
 th
@@ -128,4 +130,10 @@ th
     font-weight: bold;
 }
 
+td
+{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
 

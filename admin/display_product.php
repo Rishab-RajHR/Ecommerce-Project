@@ -25,7 +25,7 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Page</title>
-  <link rel="stylesheet" href="admin_style.css">
+  <link rel="stylesheet" href="admin_style.css?v=2">
 </head>
 <body>
     
@@ -83,7 +83,9 @@ session_start();
                        <td><?php echo $row['description'] ?></td>
                        <td><?php echo $row['quantity'] ?></td>
                        <td><?php echo $row['price'] ?></td>
-                       <td></td>
+                       <td>
+                           <img height="100" width="100" src="../product_image/<?php echo $row['image'] ?>">
+                       </td>
                   </tr>
 
                   <?php
