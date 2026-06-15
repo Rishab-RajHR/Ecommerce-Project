@@ -12,6 +12,12 @@ session_start();
       header("location:../home/login.php");
    }
 
+   $conn = mysqli_connect("localhost","root","","php_ecom");
+
+   $sql = "SELECT * FROM products";
+
+   $result = mysqli_query($conn,$sql);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,13 +71,25 @@ session_start();
                       <th>Image</th>
                   </tr>
 
+                  <?php
+                  
+                    while($row=mysqli_fetch_assoc($result))
+
+                    {
+                   ?>
+
                   <tr>
-                       <td>ABC</td>
-                       <td>ABC</td>
-                       <td>ABC</td>
-                       <td>ABC</td>
-                       <td>ABC</td>
+                       <td><?php echo $row['title'] ?></td>
+                       <td><?php echo $row['description'] ?></td>
+                       <td><?php echo $row['quantity'] ?></td>
+                       <td><?php echo $row['price'] ?></td>
+                       <td></td>
                   </tr>
+
+                  <?php
+
+                    }
+                  ?>
 
                </table>
 
