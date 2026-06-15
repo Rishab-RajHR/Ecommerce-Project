@@ -1,3 +1,12 @@
+<?php
+
+$conn = mysqli_connect("localhost","root","","php_ecom");
+
+$sql = "SELECT * from products";
+
+$result = mysqli_query($conn,$sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,72 +64,35 @@
 
    <div class="my_card">
 
+        <?php 
         
-        <div class="card">
+         while($row=mysqli_fetch_assoc($result))
+         
+         {
+               
+         ?>
+
+         <div class="card">
             
-          <img class="p_image" src="images/watch.jpeg">
+          <img class="p_image" src="product_image/<?php echo $row['image'] ?>">
 
-           <h4>Watch</h4>
+           <h4><?php echo $row['title'] ?></h4>
 
-           <p>A watch is a portable timekeeping device worn on the wrist or carried. Modern watches display time, date, fitness tracking, notifications, and other smart features for convenience and productivity.</p>
+           <p><?php echo $row['description'] ?></p>
 
-           <p>Price : $30</p>
+           <p>Price : <?php echo $row['price'] ?></p>
 
            <a href="">Buy Now</a>
 
         </div>
-        <div class="card">
-            
-          <img class="p_image" src="images/shoe.jpg">
 
-           <h4>Shoe</h4>
 
-           <p>A shoe is footwear designed to protect and support the feet. It provides comfort, durability, and style for daily activities, sports, work, and outdoor use in various environments.</p>
-
-           <p>Price : $130</p>
-
-           <a href="">Buy Now</a>
-
-        </div>
-        <div class="card">
-            
-          <img class="p_image" src="images/phone.jpg">
-
-           <h4>Phone</h4>
-
-           <p>A phone is a communication device used for calling, messaging, and internet access. Modern smartphones offer cameras, apps, navigation, entertainment, and productivity tools, making daily tasks more convenient.</p>
-
-           <p>Price : $830</p>
-
-           <a href="">Buy Now</a>
-
-        </div>
-        <div class="card">
-            
-          <img class="p_image" src="images/makeup.jpg">
-
-           <h4>Makeup</h4>
-
-           <p>Makeup consists of cosmetic products used to enhance or alter facial appearance. It includes foundation, lipstick, mascara, and other items that improve aesthetics, confidence, and personal expression.</p>
-
-           <p>Price : $430</p>
-
-           <a href="">Buy Now</a>
-
-        </div>
-        <div class="card">
-            
-          <img class="p_image" src="images/camera.jpeg">
-
-           <h4>Camera</h4>
-
-           <p>A camera is a device used to capture photographs and videos. It records visual moments digitally or on film, offering features like zoom, focus, and image stabilization.</p>
-
-           <p>Price : $1830</p>
-
-           <a href="">Buy Now</a>
-
-        </div>
+        <?php
+         }  
+        ?>
+        
+       
+       
 
    </div>
   
