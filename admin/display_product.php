@@ -86,7 +86,8 @@ session_start();
                       <th>Quantity</th>
                       <th>Price</th>
                       <th>Image</th>
-                      <the>Delete</the>
+                      <th>Delete</th>
+                      <th>Update</th>
                   </tr>
 
                   <?php
@@ -101,12 +102,17 @@ session_start();
                        <td><?php echo $row['description'] ?></td>
                        <td><?php echo $row['quantity'] ?></td>
                        <td><?php echo $row['price'] ?></td>
+
                        <td>
                            <img height="100" width="100" src="../product_image/<?php echo $row['image'] ?>">
                        </td>
                        <td>
                            <a onclick="return confirm('Are you sure to delete this ');" class="del_btn" href="display_product.php?id=<?php echo $row['id'] ?>">Delete</a>
                        </td>
+
+                       <td> 
+                          <a class="upd_btn" href="update_product.php?id=<?php echo $row['id'] ?>">Update</a>  
+                      </td>
                   </tr>
 
                   <?php
