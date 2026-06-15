@@ -53,7 +53,27 @@ session_start();
             
             <div class="info">
     
-               <p>Our company is dedicated to delivering innovative, reliable, and high-quality solutions that help businesses grow and succeed. With a strong focus on customer satisfaction, we combine technology, expertise, and creativity to meet diverse business needs. We believe in integrity, teamwork, and continuous improvement, ensuring excellence in every project we undertake. Our mission is to build lasting relationships with clients by providing value-driven services and supporting their long-term success.</p>
+              <h1>All Products</h1>
+
+               <table>
+                   
+                  <tr>
+                      <th>Title</th>
+                      <th>Description</th>
+                      <th>Quantity</th>
+                      <th>Price</th>
+                      <th>Image</th>
+                  </tr>
+
+                  <tr>
+                       <td>ABC</td>
+                       <td>ABC</td>
+                       <td>ABC</td>
+                       <td>ABC</td>
+                       <td>ABC</td>
+                  </tr>
+
+               </table>
 
             </div>
 
