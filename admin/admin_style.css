@@ -115,4 +115,16 @@ textarea
     height: 200px;
 }
 
+table{
+     border: 2px solid black;
+}
+
+th
+{
+    background: skyblue;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
 
