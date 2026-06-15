@@ -278,3 +278,12 @@ input[type='submit']
      padding: 10px;
      border-radius: 10%;
 }
+
+
+.logout_btn
+{
+     background: skyblue;
+     color: white;
+     padding: 10px;
+     border-radius: 14px;
+}

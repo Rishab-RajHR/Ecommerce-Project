@@ -24,7 +24,7 @@ $conn = mysqli_connect("localhost","root","","php_ecom");
               
               $_SESSION['usertype']="user";
 
-              header("location:userpage.php");
+              header("location:../index.php");
           }
 
           else if($row['usertype']=="admin")

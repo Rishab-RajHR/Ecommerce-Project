@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+
+error_reporting(0);
+
 $conn = mysqli_connect("localhost","root","","php_ecom");
 
 $sql = "SELECT * from products";
@@ -40,6 +44,26 @@ $result = mysqli_query($conn,$sql);
                <a href="#">Contact</a>
             </li>
 
+            <?php
+            
+            if($_SESSION['user_email'])
+
+            {
+
+            ?>
+
+            <a class="logout_btn" href="logout.php">Logout</a>
+
+            <?php
+            
+            }
+
+            else
+            {
+
+            ?>
+
+            
             <li>
                <a href="home/register.php">Register</a>
             </li>
@@ -47,6 +71,12 @@ $result = mysqli_query($conn,$sql);
             <li>
                <a href="home/login.php">Login</a>
             </li>
+              
+            <?php
+            }
+
+            ?>
+
         </ul>
    </nav>
 
