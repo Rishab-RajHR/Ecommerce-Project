@@ -25,7 +25,7 @@ session_start();
            $qty = $_POST['qty'];
 
 
-           $image_name = $_FILES['my_name']['name'];
+           $image_name = $_FILES['my_image']['name'];
 
            $tmp = explode(".",$image_name);
 
