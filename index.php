@@ -112,7 +112,28 @@ $result = mysqli_query($conn,$sql);
 
            <p>Price : <?php echo $row['price'] ?></p>
 
-           <a href="">Buy Now</a>
+           <?php
+           if($_SESSION['user_email'])
+
+           { 
+
+           ?>
+               <a href="">Buy Now</a>
+           <?php
+
+           }
+
+           else
+           {
+           ?>
+
+           <a href="home/login.php">Buy Now</a>
+            
+          <?php
+               
+           }
+
+           ?>
 
         </div>
 
