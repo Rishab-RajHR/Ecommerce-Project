@@ -30,6 +30,21 @@ session_start();
            $tmp = explode(".",$image_name);
 
            $newfilename = round(microtime(true)).'.'.end($tmp);
+
+           $uploadpath = "../product_image/".$newfilename;
+
+           move_uploaded_file($_FILES['my_image']['tmp_name'],$uploadpath);
+
+           $sql = "INSERT INTO products(title,description,price,quantity,image) VALUES ('$title', '$des', '$price', '$qty', '$newfilename')";
+
+           $data = mysqli_query($conn,$sql);
+
+           if ($data) {
+              
+               header('location:add_product.php');
+           }
+
+
   }
 
 ?>
