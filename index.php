@@ -52,6 +52,8 @@ $result = mysqli_query($conn,$sql);
 
             ?>
 
+            <a class="logout_btn" href="user_order.php?email=<?php echo $_SESSION['user_email'] ?>">Orders</a>
+
             <a class="logout_btn" href="logout.php">Logout</a>
 
             <?php
