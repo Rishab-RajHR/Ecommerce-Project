@@ -1,5 +1,9 @@
 <?php
 
+    session_start();
+
+    $_SESSION['user_email']=$_GET['email'];
+
 $conn = mysqli_connect("localhost","root","","php_ecom");
 
 $p_id = $_GET['id'];
@@ -42,7 +46,9 @@ $order_result = mysqli_query($conn,$order_sql);
 
 if($order_result)
 {
-   echo "Order placed successfully";
+    $_SESSION['user_email']=$_GET['email'];
+
+    header("location:user_order.php");
 }
 
 ?>
@@ -51,9 +57,67 @@ if($order_result)
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order Page</title>
+  <link rel="stylesheet" href="style.css">
+ <title>Order Page</title>
 </head>
 <body>
-   <h1>Order Page</h1>
+   <nav>
+
+        <input type="checkbox" id="check">
+
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <label class="my_logo">My Ecom</label>
+
+        <ul>
+            <li>
+               <a href="#">Home</a>
+            </li>
+
+            <li>
+               <a href="#">Products</a>
+            </li>
+
+            <li>
+               <a href="#">Contact</a>
+            </li>
+
+            <?php
+            
+            if($_SESSION['user_email'])
+
+            {
+
+            ?>
+
+            <a class="logout_btn" href="logout.php">Logout</a>
+
+            <?php
+            
+            }
+
+            else
+            {
+
+            ?>
+
+            
+            <li>
+               <a href="home/register.php">Register</a>
+            </li>
+
+            <li>
+               <a href="home/login.php">Login</a>
+            </li>
+              
+            <?php
+            }
+
+            ?>
+
+        </ul>
+   </nav>
 </body>
 </html>
