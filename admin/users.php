@@ -1,8 +1,8 @@
 <?php
 
-session_start();
+   session_start();
 
-   $conn = mysqli_connect("localhost","root","","php_ecom");
+   $conn=mysqli_connect("localhost","root","","php_ecom");
 
    if(!isset($_SESSION['user_email']))
    {
@@ -14,11 +14,11 @@ session_start();
       header("location:../home/login.php");
    }
 
-   $sql="SELECT * from  orders";
+    $is_user="user";
 
-   $result=mysqli_query($conn,$sql);
+    $sql="SELECT * from users where usertype='$is_user'";
 
-
+    $result = mysqli_query($conn,$sql);
 
 ?>
 <!DOCTYPE html>
@@ -63,54 +63,36 @@ session_start();
             </div>
             
             <div class="info">
-      
-              <h1>All Orders</h1>
+    
+               <h1>All Users</h1>
 
-              <table>
-                  <tr>
-                      <th>Customer Name</th>
+               <table>
+                   <tr>
+                      <th>User Name</th>
                       <th>Email</th>
-                      <th>Address</th>
                       <th>Phone</th>
-                      <th>Product Title</th>
-                      <th>Price</th>
-                      <th>Image</th>
-                      <th>Status</th>
-                      <th>Change Status</th>
-                  </tr>
+                      <th>Address</th>
+                   </tr>
 
                   <?php
                   
                   while($row=mysqli_fetch_assoc($result))
+
                   {
-
                   ?>
 
-                  <tr>
-                      <td><?php echo $row['username']?></td>
+                   <tr>
+                      <td><?php echo $row['name']?></td>
                       <td><?php echo $row['email']?></td>
-                      <td><?php echo $row['address']?></td>
                       <td><?php echo $row['phone']?></td>
-                      <td><?php echo $row['title']?></td>
-                      <td><?php echo $row['price']?></td>
-                      <td>
-                         <img width="100" height="100" src="../product_image/<?php echo $row['image']?>">
-                      </td>
-                      <td><?php echo $row['status']?></td>
+                      <td><?php echo $row['address']?></td>
+                   </tr>
 
-                      <td>
-                          <a class="del_btn" href="update_order.php?id=<?php echo $row['id']?>">Delivered</a>
-                      </td>
-                  </tr>
-
-                  <?php
-                  
+                  <?php 
                   }
-                  
                   ?>
-
                   
-              </table>
+               </table>
 
             </div>
 
