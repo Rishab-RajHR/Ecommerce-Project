@@ -31,7 +31,7 @@ session_start();
 
              <ul>
                <li>
-                    <a href="#">Dashboard</a>
+                    <a href="adminpage.php">Dashboard</a>
                </li>
                <li>
                     <a href="#">Users</a>
@@ -41,6 +41,9 @@ session_start();
                </li>
                <li>
                     <a href="display_product.php">View Products</a>
+               </li>
+               <li>
+                    <a href="all_orders.php">Orders</a>
                </li>
              </ul>
          </div>
