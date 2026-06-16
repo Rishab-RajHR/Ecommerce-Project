@@ -118,7 +118,7 @@ $result = mysqli_query($conn,$sql);
            { 
 
            ?>
-               <a href="">Buy Now</a>
+               <a href="my_order.php?id=<?php echo $row['id'] ?>& email=<?php echo $_SESSION['user_email'] ?>">Buy Now</a>
            <?php
 
            }
