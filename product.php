@@ -42,7 +42,7 @@ else
         </label>
 
         <label class="my_logo">
-            <a style="color: white;"  href="index.php">My Ecom</a>
+            <a href="index.php">My Ecom</a>
         </label>
 
         <ul>
@@ -96,11 +96,7 @@ else
         </ul>
    </nav>
 
-   <div>
-
-       <img class="my_cover" src="images/cover.png">
-
-   </div>
+  
 
    <div>
   
