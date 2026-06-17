@@ -1,6 +1,8 @@
 <?php
 
-session_start();
+   session_start();
+
+   $conn=mysqli_connect("localhost","root","","php_ecom"); 
 
    if(!isset($_SESSION['user_email']))
    {
@@ -11,6 +13,42 @@ session_start();
    {
       header("location:../home/login.php");
    }
+
+     //  Total Users
+
+   $user_sql="SELECT * FROM users";
+
+   $u_result=mysqli_query($conn,$user_sql);
+
+   $total_user = mysqli_num_rows($u_result);
+
+
+   // Total Products
+
+   $product_sql = "SELECT * FROM  products";
+
+   $p_result=mysqli_query($conn,$product_sql);
+
+   $total_product = mysqli_num_rows($p_result);
+
+
+   // Total Orders
+
+   $order_sql = "SELECT * FROM orders";
+
+   $o_result=mysqli_query($conn,$order_sql);
+
+   $total_order = mysqli_num_rows($p_result);
+
+
+   // Total Delivered
+
+     $deliver_sql = "SELECT * FROM orders WHERE status = 'Delivered' ";
+
+     $d_result=mysqli_query($conn,$deliver_sql);
+
+     $total_delivered = mysqli_num_rows(($d_result));
+
 
 ?>
 <!DOCTYPE html>
@@ -56,7 +94,40 @@ session_start();
             
             <div class="info">
     
-               <p>Our company is dedicated to delivering innovative, reliable, and high-quality solutions that help businesses grow and succeed. With a strong focus on customer satisfaction, we combine technology, expertise, and creativity to meet diverse business needs. We believe in integrity, teamwork, and continuous improvement, ensuring excellence in every project we undertake. Our mission is to build lasting relationships with clients by providing value-driven services and supporting their long-term success.</p>
+               <div class="card">
+
+                  <div class="my_card">
+                      <h3>Total Users</h3>
+
+                      <hr>
+
+                      <p><?php echo $total_user ?></p>
+                  </div>
+
+                  <div class="my_card">
+                      <h3>Total Products</h3>
+
+                       <hr>
+
+                      <p><?php echo $total_product ?></p>
+                  </div>
+
+                  <div class="my_card">
+                      <h3>Total Orders</h3>
+
+                      <hr>
+
+                      <p><?php echo $total_order ?></p>
+                  </div>
+
+                   <div class="my_card">
+                      <h3>Total Delivered</h3>
+
+                      <hr>
+
+                      <p><?php echo $total_delivered ?></p>
+                  </div>
+               </div>
 
             </div>
 
