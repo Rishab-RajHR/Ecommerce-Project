@@ -94,6 +94,15 @@ $result = mysqli_query($conn,$sql);
 
    </div>
 
+   <div>
+       
+        <form>
+            <input type="text" name="my_search" placeholder="Search your products ...">
+
+            <input type="submit" name="search">
+        </form>
+   </div>
+
    <div class="my_card">
 
         <?php 
